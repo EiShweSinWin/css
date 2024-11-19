@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Descendant Selector Example</title>
+    <style>
+      
+	 
+	  .button{
+		text-decoration: none;
+		background-color: red;
+		color: white;
+		font-size: 18px;
+		padding: 10px 20px;
+		margin: 10px;
+		border-radius: 10px;
+
+	  }
+	  /*block element*/
+	  .button__text{
+		font-style: italic;
+		color: blueviolet;
+
+	  }
+	   /*block modifier*/
+	   .btn--red{
+		background-color: green;
+	   }
+	   .btn--big{
+		font-size: 24px;
+		
+	   }
+    </style>
+</head>
+<body class="parent">
+    <div>
+       <p>This is a paragraph 1 inside the parent element</p>
+	   <p>This is a paragraph 2 inside the parent element</p>
+	   <div class="background">
+		<p>This is a paragraph 3 inside the parent element</p>
+	  
+	     <p>This is a paragraph 3 inside the parent element</p>
+		 <p>This is a paragraph 3 inside the parent element</p>
+	   </div>
+	   <div id="grad1">
+		<p>This is a paragraph 3 inside the parent element</p>
+	  
+	     <p>This is a paragraph 3 inside the parent element</p>
+		 <p>This is a paragraph 3 inside the parent element</p>
+	   </div>
+	   </div>
+	   <a href="#" class="button">
+		<span  class="button__text">Standard button</span>
+	   </a>
+	   <a href="#" class="button btn--red">
+		<span  class="button__text">Standard button</span>
+	   </a>
+	   <a href="#" class="button btn--red btn--big">
+		<span  class="button__text">Standard button</span>
+	   </a>
+</body>
+	  
+</html>

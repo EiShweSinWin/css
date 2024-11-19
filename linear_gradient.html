@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Linear Gradient</title>
+    <style>
+      
+	 
+	   .image{
+		background: url(https://images.pexels.com/photos/1420440/pexels-photo-1420440.jpeg?auto=compress&cs=tinysrgb&w=1200);
+	   }
+	   .background{
+		height: 200px;
+		background-color: red;
+		opacity: 0.5;
+		background-image: linear-gradient(to right, red, yellow, green);
+		background-position:20px 50px;
+	   }
+	   #grad1{
+		height: 200px;
+		background-color: red;
+		background-image: linear-gradient(to left, red, yellow, green);
+	   }
+    </style>
+</head>
+<body class="image">
+    <div>
+       <p>This is a paragraph 1 inside the parent element</p>
+	   <p>This is a paragraph 2 inside the parent element</p>
+	   <div class="background">
+		<p>This is a paragraph 3 inside the parent element</p>
+	  
+	     <p>This is a paragraph 3 inside the parent element</p>
+		 <p>This is a paragraph 3 inside the parent element</p>
+	   </div>
+	   <div id="grad1">
+		<p>This is a paragraph 3 inside the parent element</p>
+	  
+	     <p>This is a paragraph 3 inside the parent element</p>
+		 <p>This is a paragraph 3 inside the parent element</p>
+	   </div>
+	   </div>
+	  
+</html>

@@ -1,0 +1,51 @@
+body{
+	background-color: aquamarine;
+}
+
+/* p{
+	color: purple;
+}
+p{
+	color: blue;
+} */
+.item{
+	color: red;
+}
+#item1{
+	color: white;
+}
+.parent{
+	font-size: 30px;
+	color: pink;
+	border: 1px solid greenyellow;
+	background-color: rgb(213, 90, 48);
+	padding: 50px;
+}
+.child{
+	position: absolute;
+	top:150px;
+	/* background-color:blue; */
+	/* padding:  50px; */
+	background-color: inherit;
+
+}
+.special{
+	font-size: 20px;
+	color: rgb(96, 192, 192);
+}
+.special span{
+	font-size: 2em;
+	
+}
+p{
+	color: burlywood!important;
+}
+.box{
+	background-color: red;
+	width: 50vw;
+	height: 80vh;
+	line-height: 35px;
+	letter-spacing: 5px;
+	text-align: center;
+	
+}
