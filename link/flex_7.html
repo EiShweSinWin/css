@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		p{
+			margin: 0;
+		}
+		.continer{
+		    display: flex;
+			gap: 10px;
+			width: 800px;
+			margin: 0 auto;
+		}
+		
+		
+		.item{
+			flex: 60%;
+			color: white;
+			font-weight: bold;
+			font-size: 3em;
+			text-align: center;
+		}
+		
+		.item p{
+			background: rgb(224, 154, 142);
+			padding: 30px 0;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+		}
+		.item-col{
+			flex: 40%;
+			display: flex;
+			flex-wrap: wrap;
+			gap: 10px;
+		}
+		.item-col p{
+			flex: 65%;
+		}
+		.footer{
+		    display: flex;
+			gap: 10px;
+			width: 800px;
+			margin: 0 auto;
+			
+		}
+		.main{
+			
+			display: flex;
+			margin: 0 auto;
+			width: 800px;
+			gap: 10px;
+		}
+		.main-col{
+			flex: 20%;
+			display: flex;
+			flex-wrap: wrap;
+			gap: 10px;
+			background-color: rgb(231, 134, 134);
+		}
+		.main-c{
+			flex: 60%;
+			display: flex;
+			background-color: red;
+			gap: 10px;
+			height: 150px;
+		}
+		.gap{
+			display: flex;
+			gap: 10px;
+			flex-direction: column;
+		}
+		
+		
+	</style>
+</head>
+<body>
+	<div class="gap">
+		<div class="footer" style="margin-top: 20px;">
+			<div class="item"> 
+				<p style="background:  linear-gradient(to bottom, #f3856a, #15e1e1);"></p>
+			</div>
+			<div class="item item-col" >
+				
+				
+				<p style="background:  linear-gradient(to bottom, #f3856a, #0be079);"></p>
+			</div>
+		 </div>
+		<div class="continer">
+			<div class="item"> 
+				<p  style="height: 300px; width:300px"></p>
+			</div>
+			<div class="item item-col">
+				<p style="width: 490px;"></p>
+				
+				<p></p>
+				
+			</div>
+		</div>
+		<div class="main">
+			
+			<p class="main-col"></p>
+			<p class="main-c"></p>
+			<p  class="main-col"></p>
+	
+	
+	</div>
+	</div>
+	
+</body>
+</html>

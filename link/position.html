@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		.relative-box {
+		    position: relative;
+			left: 50px;
+			top: 20px;
+			background-color: red;
+		}
+		.container{
+			position: relative;
+			color: white;
+			width: 650px;
+			height: 400px;
+		    border: 1px solid black;
+			margin: 10px auto;
+			box-shadow:0 20px 30px rgba(16, 15, 15, 0.3);
+			background-color: rgb(178, 189, 239);
+			border-radius: 10px;
+		}
+		.absolute-box{
+			
+			position: absolute;
+			border-radius: 10px;
+			top: 30px;
+			left: 50px;
+			width: 300px;
+			height: 100px;
+			background-color: green;
+			padding: 20px;
+			box-shadow:0 20px 30px rgba(16, 15, 15, 0.3);
+			transition: transform 0.5s ease-in-out;
+			
+		}
+		.absolute-box:hover{
+			transform: translateX(20px) translateY(-20px);
+			z-index: 1;
+			height: 120px;
+			box-shadow: 10px 5px 10px rgb(95, 92, 92);
+		}
+		.bg-01{
+			
+			top: 80px;
+			left: 100px;
+			background-color: rgb(128, 0, 111);
+		}
+		.bg-02{
+			top: 130px;
+			left: 150px;
+			background-color: rgb(14, 213, 103);
+		}
+		.bg-03{
+			top: 180px;
+			left: 200px;
+			background-color: rgb(244, 190, 12);
+		}
+
+	</style>
+</head>
+<body>
+	
+	<div class="container">
+		<div class="absolute-box" >
+			<h2 style="margin: 0;">Block1</h2><br>Content for Block1
+		</div>
+		<div class="absolute-box bg-01">
+			<h2 style="margin: 0;">Block2</h2><br>Content for Block2
+		</div>
+		<div class="absolute-box bg-02">
+			<h2 style="margin: 0;">Block3</h2><br>Content for Block3
+		</div>
+		<div class="absolute-box bg-03">
+			<h2 style="margin: 0;">Block4</h2><br>Content for Block4
+		</div>
+	</div>
+	
+</body>
+</html>

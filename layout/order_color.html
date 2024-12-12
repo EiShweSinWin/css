@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		#main{
+			width: 600px;
+			height: 150px;
+			border: 1px solid green;
+			display: flex;
+			background-color: rgb(176, 201, 218);
+		}
+		#main div{
+			flex-grow: 1;
+			
+			flex-basis: 100px;
+			
+		}
+		#main div:nth-of-type(2){
+			flex-grow: 3;
+		}
+		
+	</style>
+</head>
+<body>
+	<h1>The order property</h1>
+	<div id="main">
+		<div style="background-color:red" id="myRedDIV"></div>
+		<div style="background-color:blue" id="myBlueDIV"></div>
+		<div style="background-color:green" id="myGreenDIV"></div>
+		<div style="background-color:pink" id="myPinkDIV"></div>
+	</div>
+	
+</body>
+</html>

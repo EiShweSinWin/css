@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		img{
+			max-width: 100%;
+			
+			margin: 0;
+			width: 100%;
+		}
+		.container{
+			display: flex;
+			
+			gap: 15px;
+			
+		}
+		.content1{
+			background-color: rgb(155, 90, 11);
+		
+			height: 90px;
+		}
+		.content2{
+			background-color: rgb(185, 204, 151);
+			
+			height: 90px;
+		}
+		.content3{
+			background-color: rgb(107, 40, 223);
+			
+			height: 90px;
+		}
+		.main{
+			height: 100px;
+			width: 100%;
+			
+		}
+		.content{
+
+			
+			gap: 10px;
+		}
+		@media screen and (max-width: 768px) {
+		    .container{
+				flex-wrap: wrap;
+
+			}
+			.content{
+				flex: 40%;
+			}
+			.content >p{
+				flex: 60%;
+			}
+			
+		}
+		@media screen and (max-width: 480px) {
+		    .container{
+				flex: 60%;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="main">
+		<div><img src="chinese.jpg" alt=""  style="background-color:aqua;margin-bottom: 10px;"></div>
+	<div class="container">
+		
+		<div class="content">
+			<div class="content1"></div>
+			<p>Free photos and videos shared by talented creators.</p>
+		</div>
+		<div class="content">
+			<div class="content2"></div>
+			<p>Free photos and videos shared by talented creators.</p>
+		</div>
+		<div class="content">
+			<div class="content3"></div>
+			<p>Free photos and videos shared by talented creators.</p>
+		</div>
+		
+	</div>
+	</div>
+</body>
+</html>

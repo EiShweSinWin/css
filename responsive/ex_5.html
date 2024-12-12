@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.bar{
+			
+			
+			margin: 0;
+			
+			background-color: rgb(126, 126, 200);
+			color: white;
+			padding: 20px;
+		
+		   
+			justify-content: space-between;
+
+		}
+		.logo{
+			flex: 1;
+		}
+		.menu{
+		   
+			list-style: none;
+			display: flex;
+			
+		}
+		.menu li a{
+			color: white;
+			padding: 20px;
+			text-decoration: none;
+		}
+		
+		body{
+			background-color: aquamarine;
+		}
+		.header{
+			padding: 20px;
+		}
+
+		.row{
+			margin: 0 20px;
+			gap: 15px;
+			display: flex;
+			flex-wrap: wrap;
+		}
+		.box{
+			border-top: 2px solid rgb(14, 75, 207);
+			padding: 20px;
+			border-radius: 8px;
+			
+			background-color: aliceblue;
+
+		}
+		@media screen and (max-width: 768px) {
+		    .row{
+				display: grid;
+				grid-template-columns: repeat(2,1fr);
+			}
+			
+		}
+		@media screen and (max-width: 480px) {
+			.row{
+				display: grid;
+				grid-template-columns: 1fr;
+			}
+		}
+		
+		
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="bar">
+			<ul class="menu">
+				<li class="logo">logo</li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Work</a></li>
+			
+				<li><a href="#">Contact</a></li>
+			</ul>
+		
+			
+		</div>
+		<div class="header">
+			<h2 style="color:black">Page Header</h2>
+		</div>
+		
+			<div class="row">
+				<div class="box">
+					<div>JULY 20,2020</div>
+					<h3>Header</h3>
+					<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+				</div>
+				<div class="box">
+					<div>JULY 20,2020</div>
+					<h3>Header</h3>
+					<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+				</div>
+				<div class="box">
+					<div>JULY 20,2020</div>
+					<h3>Header</h3>
+					<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+				</div>
+				<div class="box">
+					<div>JULY 20,2020</div>
+					<h3>Header</h3>
+					<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+				</div>
+				<div class="box">
+					<div>JULY 20,2020</div>
+					<h3>Header</h3>
+					<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+				</div>
+				<div class="box">
+					<div>JULY 20,2020</div>
+					<h3>Header</h3>
+					<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+				</div>
+			</div>
+	</div>
+	
+</body>
+</html>

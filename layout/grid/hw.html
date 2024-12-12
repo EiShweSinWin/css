@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		/* General Styles */
+		.grid-container {
+			display: grid;
+			
+			grid-template-areas:
+				"header header header header"
+				"menu menu menu menu"
+				"main main content content"
+				"footer footer footer footer";
+			gap: 8px;
+			background-color: #e9b16c;
+			padding: 10px;
+		}
+		.grid-container div {
+			background-color: rgba(21, 236, 13, 0.8);
+			text-align: center;
+			padding: 20px 0;
+			font-size: 20px;
+		}
+
+		/* Individual Items */
+		.header {
+			grid-area: header;
+		}
+		.menu {
+			grid-area: menu;
+		}
+		.item3 {
+			grid-area: main;
+		}
+		.item4 {
+			grid-area: right;
+		}
+		.item5 {
+			grid-area: content;
+		}
+		.item6 {
+			grid-area: footer;
+		}
+		.item7 {
+			grid-area: sidebar;
+		}
+		.item8 {
+			grid-area: slight;
+		}
+
+		/* For Tablets */
+		@media (min-width: 600px) and (max-width: 1024px) {
+			.grid-container {
+				grid-template-areas:
+				"header header header header header header header header"
+				"right right right right right right right right"
+					"menu menu menu menu main main main main"
+					
+					"sidebar sidebar sidebar sidebar slight slight slight slight"
+					"content content content content content content content content"
+					
+					"footer footer footer footer footer footer footer footer";
+					
+				
+			}
+			}
+		
+
+		/* For Phones */
+		@media (max-width: 599px) {
+			.grid-container {
+				grid-template-areas:
+					"header"
+					"menu"
+					"right"
+					"main"
+					
+					"content"
+					"sidebar"
+					"slight"
+					"footer";
+				
+			}
+			.grid-container div {
+				font-size: 16px;
+				padding: 10px 0;
+			}
+		}
+
+		/* For Desktops */
+		@media (min-width: 1025px) {
+			.grid-container {
+				grid-template-areas:
+					"header header header header header header header header"
+					"menu menu right right main main content content"
+					"sidebar sidebar sidebar sidebar slight slight slight slight"
+					"footer footer footer footer footer footer footer footer";
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="grid-container">
+		<div class="header" style="background-color: lightgreen; height: 100px;"></div>
+		<div class="menu" style="background-color: rgb(11, 189, 238);height: 100px;"></div>
+		<div class="item3" style="background-color: lightcyan;height: 100px;"></div>
+		<div class="item4" style="background-color: rgb(231, 85, 145);height: 100px;"></div>
+		<div class="item5" style="background-color: lightpink;height: 100px;"></div>
+		<div class="item6" style="background-color: rgb(133, 8, 47);height: 100px;"></div>
+		<div class="item7" style="background-color: rgb(170, 230, 51);height: 100px;"></div>
+		<div class="item8" style="background-color: rgb(87, 85, 215);height: 100px;"></div>
+	</div>
+</body>
+</html>

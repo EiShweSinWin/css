@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Flex</title>
+	<style>
+		#main{
+			width:100%;
+			
+			
+			display: flex;
+			flex-wrap: wrap;
+			align-content: flex-start;
+		}
+		#main div{
+			width: 70px;
+			height: 70px;
+		}
+		.navbar{
+			color: white;
+		}
+		.sidebar{
+			color: white;
+			flex: 1;
+			
+		}
+		.main{
+			color: white;
+			flex: 2;
+			
+		}
+		.container1{
+			color: white;
+			flex:2 ;}
+			
+	</style>
+</head>
+<body>
+	<div id="main">
+		<div  class="navbar" style="background-color: red;min-height: 100px; width: 100%;  text-align: center;">Nav bar</div>
+		
+	
+		
+	</div>
+	<div  class="sideBar" style="background-color: green;height: 1200px; width: 200px;  text-align: center;">Side bar
+
+
+
+
+	</div>
+	<div  class="main" style="background-color: blue;height: 200px; width: 200px;  text-align: center;">Main</div>
+	<div class="container1" style="background-color: pink;"> Container1</div>
+
+	
+	
+</body>
+</html>

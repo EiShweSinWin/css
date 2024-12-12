@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		p{
+			margin: 0;
+		}
+		.continer{
+		    display: flex;
+			gap: 10px;
+			width: 800px;
+			margin: 0 auto;
+		}
+		.continer:nth-last-child(2){
+			margin-top: 20px;
+			flex-direction: row-reverse
+			;
+		}
+
+		.item{
+			flex: 60%;
+			color: white;
+			font-weight: bold;
+			font-size: 3em;
+			text-align: center;
+		}
+		.item:first-child p{
+			height: 240px;
+		}
+		.item p{
+			background: rgb(224, 154, 142);
+			padding: 30px 0;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+		}
+		.item-col{
+			flex: 40%;
+			display: flex;
+			flex-wrap: wrap;
+			gap: 10px;
+		}
+		.item-col p{
+			flex: 65%;
+		}
+		.footer{
+		    display: flex;
+			gap: 10px;
+			width: 800px;
+			margin: 0 auto;
+			
+		}
+		
+		
+	</style>
+</head>
+<body>
+	<div class="continer">
+		<div class="item"> 
+			<p>1</p>
+		</div>
+		<div class="item item-col">
+			<p>2</p>
+			
+			<p>3</p>
+			
+		</div>
+	</div>
+	<div class="continer" style="margin-top: 20px;">
+		<div class="item"> 
+			<p>1</p>
+		</div>
+		<div class="item item-col">
+			
+			<p >4</p>
+			<p>5</p>
+		</div>
+ 
+	</div>
+	<div class="footer" style="margin-top: 20px;">
+		<div class="item"> 
+			<p style="background:  linear-gradient(to bottom, #f3856a, #15e1e1);">7</p>
+		</div>
+		<div class="item item-col" >
+			
+			
+			<p style="background:  linear-gradient(to bottom, #f3856a, #0be079);">8</p>
+		</div>
+	 </div>
+</body>
+</html>

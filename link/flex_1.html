@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+
+	<style>
+		body {
+			margin: 0;
+			font-family: Arial, sans-serif;
+			display: flex;
+			flex-direction: column; /* Stack main sections vertically */
+			min-height: 100vh;
+		}
+
+		.item1 {
+			background-color: red;
+			padding: 10px;
+			text-align: center;
+			
+		}
+
+		.container {
+			display: flex;
+			flex: 1; /* Takes up remaining space */
+			gap: 10px;
+			margin-top: 10px;
+		}
+
+		.sidebar {
+			background-color: lightcoral;
+			width: 200px; /* Fixed width for Sidebar */
+			padding: 10px;
+		}
+
+		.main-content {
+			display: flex;
+			flex-direction: column; /* Stacks Main and Content sections */
+			flex: 1; /* Occupies remaining horizontal space */
+		}
+
+		.main {
+			background-color: blue;
+			padding: 10px;
+			text-align: center;
+			flex: 1; /* Allow Main to occupy its space */
+		}
+
+		.content {
+			display: flex;
+			justify-content: space-between; /* Distributes Content1, Content2, and Content3 */
+			padding: 10px;
+			
+		}
+
+		.content > div {
+			flex: 1; /* Each content block takes equal space */
+			background-color: lightgray;
+			padding: 10px;
+			text-align: center;
+		}
+
+		.footer-container {
+			display: flex;
+			/* Aligns Footer and Sidebar in a row */
+			gap: 10px;
+		}
+
+		.footer {
+			background-color: darkgray;
+			flex: 1; /* Allows Footer to fill remaining space */
+			padding: 10px;
+			text-align: center;
+			gap: 10px;
+		}
+	</style>
+</head>
+<body>
+	<div class="item1">Nav Bar</div>
+
+	<div class="container">
+		<div class="sidebar">Sidebar</div>
+		<div class="main-content">
+			<div class="main">Main</div>
+			<div class="content">
+				<div>Content1</div>
+				<div>Content2</div>
+				<div>Content3</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="footer-container">
+		<div class="sidebar"></div>
+		<div class="footer">Footer</div>
+	</div>
+</body>
+</html>

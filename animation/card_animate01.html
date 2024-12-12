@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat+Underline:ital,wght@0,100..900;1,100..900&family=Yuji+Mai&display=swap" rel="stylesheet">
+</head>
+<style>
+	*{
+		margin: 0;
+		padding: 0;
+		font-family:  "Yuji Mai", serif;
+	}
+	img{
+		width: 100%;
+		margin-top: 20px;
+	}
+	body{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background: #C6FFDD;
+		height: 100vh;
+	}
+	.card{
+		padding: 10px;
+		animation: box 1s;
+		display: flex;
+		width: 600px;
+		gap: 40px;
+		background: #C6FFDD;
+		background: -webkit-linear-gradient(to right, #C6FFDD, #FBD786, #f7797d);
+		background: linear-gradient(to right, #C6FFDD, #FBD786, #f7797d);
+		border-radius:50px 20px;
+		box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+	}
+	.card-title{
+		color: #0c00ff;
+		animation: toLeft 1s ease-in-out;
+		
+	}
+	.card-text{
+		font-size: 20px;
+		padding-top: 10px;
+		animation: toLeft 2s ease-in-out;
+		font-size: medium;
+		font-style: italic;
+		
+		
+		
+	}
+	.card-img{
+	    flex: 40%;
+		animation: toRight 1s ease-out;
+		transition: 0.5s;
+		animation-duration: 10s;
+	}
+	.card-img img{
+		border-radius: 10px;
+		animation-duration: 10s;
+	}
+	.card-body{
+		flex: 60%;
+	}
+	.card:hover .card-img{
+	   animation: dance 2s ease-in-out;
+	  animation-duration: 60s;
+	}
+	.card:hover{
+		transform: scale(1.1);
+		box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+	}
+	@keyframes toLeft{
+		0%{
+			transform: translateX(300px);
+			opacity: 0;
+			
+		}
+		100%{
+			transform: translateX(0);
+			opacity: 1;
+		}
+		
+	}
+	@keyframes toRight{
+		0%{
+			transform: translateX(-300px);
+			opacity: 0;
+		}
+		100%{
+			transform: translateX(0);
+			opacity: 1;
+		}
+	}
+	@keyframes box{
+		0%{
+			transform: translateY(-300px);
+		}
+		25%{
+			transform: translateY(-500px);
+		}
+		50%{
+			transform: translateY(-100px);
+		}
+		75%{
+			transform: translateY(-50px);
+		}
+		80%{
+			transform: translateY(-50px);
+		}
+		100%{
+			transform: translateY(20);
+		}
+		}
+		@keyframes dance {
+			0% { transform: translateX(0) rotate(0deg); }
+			25% { transform: translateX(-10px) rotate(-10deg); }
+			50% { transform: translateX(10px) rotate(10deg); }
+			75% { transform: translateX(-10px) rotate(-10deg); }
+			100% { transform: translateX(0) rotate(0deg); }
+		  }
+</style>
+<body>
+	<div class="card">
+		<div class="card-img">
+			<img src="1.png" alt="">
+		</div>
+		<div class="card-body">
+			<h1 class="card-title">Snow White</h1>
+<p class="card-text">Snow White is a 1937 American animated musical fantasy film produced by Walt Disney Productions. Devised by Walt Disney and Richard Disney, and directed by David Hand, the film is loosely based on the fairy tale Snow White and the Seven Dwarfs by the Brothers Grimm</p>
+		</div>
+	</div>
+</body>
+</html>

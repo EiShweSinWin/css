@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		.grid-container{
+			display: grid;	
+			align-content: center;
+			grid-template-columns:30px 50px 50px 50px 50px 50px;
+			background-color: #e983e9;
+			padding: 10px;
+			gap: 10px;
+			justify-content: space-between;
+
+		}
+		.grid-container >div{
+			background-color: rgba(255, 255, 255, 0.8);
+			text-align: center;
+			padding: 20px 0;
+			font-size: 30px;
+		}
+		.six{
+			/*grid-column-start: 2;
+			grid-column-end: 4;
+			(or)
+			grid-column: 2/4;
+			*/
+			grid-column: span 2;
+			
+		}
+		.four{
+			grid-row: span 2;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+	</style>
+</head>
+<body>
+	<h1>Grid Element</h1>
+	<p>A Grid Layout must have a parent element with the <em>display</em>property set to <em>grid<em>inline-grid</em></p>
+	<p>Direct childl </p>
+	<div class="grid-container">
+		<div>1</div>
+		<div>2</div>
+		<div>3</div>
+		<div >4</div>
+		<div>5</div>
+		<div>6</div>
+
+	</div>
+</body>
+</html>

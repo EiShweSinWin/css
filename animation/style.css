@@ -1,0 +1,82 @@
+*{
+	font-family: "Yuji Mai", serif;
+}
+
+#box{
+	height: 250px;
+	background-color: red;
+	font-size: 13em;
+	text-align: center;
+}
+.img-size{
+	width: 100%;
+	margin: 10 auto;
+}
+.container{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	 /* Full screen height for demonstration */
+	 width: 50vw;
+    margin: 0 auto;
+}
+img{
+	animation-name: rotate;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-duration: normal;
+	animation-play-state:running ;
+	width: 100px;
+	
+	
+}
+.img2{
+	animation-name: dance;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-duration: normal;
+	animation-play-state:running ;
+	
+	
+	
+}
+
+@keyframes sideLeft{
+	from{
+		transform: translateX(300%);
+	}}
+
+@keyframes sideRight{
+to{transform: translateX(300%);}
+	}
+
+	
+@keyframes sideUp{
+	from{transform: translateY(300%);}
+}
+@keyframes sideDown{
+	from{transform: translateY(300%);}
+}
+@keyframes rotate{
+	50%{transform: rotateY(180deg);}
+}
+@keyframes grow{
+	50%{transform: scale(6,2);}
+}
+@keyframes shrink{
+	50%{transform: scale(0.5,0.5);}
+}
+@keyframes fade{
+	100%{opacity:0.5}
+}
+@keyframes glow{
+	50%{box-shadow: 0 0 90px hsl(33, 92%, 48%)}
+}
+@keyframes dance {
+	0% { transform: translateX(0) rotate(0deg); }
+	25% { transform: translateX(-10px) rotate(-10deg); }
+	50% { transform: translateX(10px) rotate(10deg); }
+	75% { transform: translateX(-10px) rotate(-10deg); }
+	100% { transform: translateX(0) rotate(0deg); }
+  }
